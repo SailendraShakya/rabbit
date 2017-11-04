@@ -3,7 +3,7 @@
 @include('errors')
 <div class="clearboth"></div>
 {!! Form::open(array('url' => 'client/create','clsss' => 'form-control','id'=> 'enq_form')) !!}
-
+<input type="hidden" id="csrf" name="_token" value="{{ csrf_token() }}">
 <div class="search-wrapper">
 	<div class="search left">
 		{{ Form::text('place', null, ['class' => 'form-control input-sm','id' => 'search-city', 'placeholder' => 'Search']) }}
