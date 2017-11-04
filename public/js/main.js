@@ -43,6 +43,7 @@ function getTweets(latLng) {
     var _data = null;
     try {
       _data = JSON.parse(data);
+      console.log(data);
       setMarkers(_data);
     } catch (e) {
       alert(e);

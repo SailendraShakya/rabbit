@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
+use TwitterAPIExchange;
+
 
 class MapController extends Controller {
 
@@ -40,5 +42,7 @@ class MapController extends Controller {
 		->buildOauth($url, $requestMethod)
 		->performRequest();
 	}
+
+	
 }
 ?>
