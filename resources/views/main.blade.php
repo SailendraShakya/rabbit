@@ -11,15 +11,14 @@
   <link rel="shortcut icon" href="https://rabbitinternet.com/wp-content/uploads/2015/09/xfavicon16-16.png.pagespeed.ic.o5h3AM6GAp.webp"/>
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<!--   <link rel="stylesheet" type="text/css" href="{{ url('css/main.css') }}">
- -->  {{ HTML::style('css/main.css', array(), true) }}
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6T6BYnfeGxcz0yiN4lM8WNMwOil7u64s&libraries=places" async
   defer></script>
-<!--   <script type="text/javascript" src="{{ url('js/main.js') }}"></script>
--->  {{ HTML::script('js/main.js', array(), true) }}
+  <script type="text/javascript" src="/js/main.js"></script>
 </head>
 <body>
   <div class="container">
