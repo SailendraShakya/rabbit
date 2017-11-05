@@ -45,10 +45,12 @@ class MapController extends Controller {
 		$record = History::where('keyword', $city)->where('updated_at', '>', $hour)->first();
 		
 		if ($record) {
-			die('testing record found');
-			$twitter_data = $record->description;
-		} else {
 			
+			$twitter_data = $record->description;
+			print_r($tweets_history);
+			die('testing record found');
+		} else {
+
 			$twitter_data = $this->getTweets($lat,$lng);
 			if (empty($twitter_data)) {
 				$twitter_data = [];
