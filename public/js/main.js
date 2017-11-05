@@ -31,7 +31,7 @@ function initMap() {
 function getTweets(latLng) {
   clearMarkers();
   $.ajax({
-    url: '//rabbit-map.herokuapp.com/map/tweets',
+    url: 'http://rabbit-map.herokuapp.com/map/tweets',
     method: "post",
     data: latLng
   })
@@ -130,7 +130,7 @@ $(document).ready(function(){
   $('#search_history').on('click',function(e){
     e.preventDefault();
     $.ajax({
-      url: '//rabbit-map.herokuapp.com/map/tweets_history',
+      url: 'http://rabbit-map.herokuapp.com/map/tweets_history',
       method: "get"
     })
     .done(function(response) {
