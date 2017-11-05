@@ -16,7 +16,7 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
-  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD6T6BYnfeGxcz0yiN4lM8WNMwOil7u64s&libraries=places" async
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCex-BT4XjH57zGcNUtwx1vh2v9k-JjUoo&libraries=places" async
   defer></script>
   <script type="text/javascript" src="/js/main.js"></script>
 </head>
