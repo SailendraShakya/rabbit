@@ -36,11 +36,12 @@ class MapController extends Controller {
 	 */
 	public function tweets(Request $request)
 	{
-		die('testing');
+
 		$hour = date('Y-m-d H:i:s', strtotime('-1 hour'));
 		$city = strtoupper($request->input('city'));
 		$lng = $request->input('lng');
 		$lat = $request->input('lat');
+		die('testing');
 		$record = History::where('city', $city)->where('updated_at', '>', $hour)->first();
 		
 		if ($record) {
