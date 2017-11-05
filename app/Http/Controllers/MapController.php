@@ -75,10 +75,10 @@ class MapController extends Controller {
 	 */
 	private function getTweets($lat, $lng){
 		$settings = array(
-			'oauth_access_token' => "397885595-lR6Et1C4nHnCtUpjyxACeZIOCucvYpkHlRzwE6I1",
-			'oauth_access_token_secret' => "YH41l7iw1gK3bG1EO1e4mdyyEoVE1n4IvOKuaQuZ8",
-			'consumer_key' => "4ARITbEDl45ebVItEAdTXA",
-			'consumer_secret' => "ZtOfXYOSVwjXTkEwARHMU2lRIzMW7JPlEGxjE5u5M"
+			'oauth_access_token' => "236236965-lceTXuVBvw8DpR9yK2FEz0TcrhOGD0blXHes31Dg",
+			'oauth_access_token_secret' => "US4Uo8v6rwYBDwmyC08cax8uIdon9SGygnkHPgmuBEpfW",
+			'consumer_key' => "cflkUlMsMjseh1T3Hy2VOq7WF",
+			'consumer_secret' => "UTr94J3UY24SkNiOsUPJXomeOWPbqdRT98QpYHCr9U5t5sU9BZ"
 			);
 
 		$url = 'https://api.twitter.com/1.1/search/tweets.json';
