@@ -47,12 +47,12 @@ class MapController extends Controller {
 		if ($record) {
 			
 			$twitter_data = $record->description;
-			print_r($twitter_data);
-			die('testing record found');
+
 		} else {
 
 			$twitter_data = $this->getTweets($lat,$lng);
 			if (empty($twitter_data)) {
+				die('testing record not found');
 				$twitter_data = [];
 			} else {
 				$record = History::where('keyword', $city)->first();
