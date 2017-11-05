@@ -47,7 +47,7 @@ class MapController extends Controller {
 		if ($record) {
 			
 			$twitter_data = $record->description;
-			print_r($tweets_history);
+			print_r($twitter_data);
 			die('testing record found');
 		} else {
 
