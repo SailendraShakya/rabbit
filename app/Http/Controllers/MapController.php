@@ -45,8 +45,8 @@ class MapController extends Controller {
 		$record = History::where('keyword', $city)->where('updated_at', '>', $hour)->first();
 		
 		if ($record) {
-			
 			$twitter_data = $record->description;
+			$record->increment('count',1);
 
 		} else {
 
