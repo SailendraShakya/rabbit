@@ -25,7 +25,7 @@ class MapController extends Controller {
 	 * @return histories
 	 */
 	public function tweets_history(){
-		$histories = History::select(array('keyword','count'))->get();
+		$histories = History::select(array('keyword','count'))->orderBy('id', 'DESC')->get();
 		echo json_encode($histories);
 	}
 
