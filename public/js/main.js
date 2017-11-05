@@ -86,17 +86,6 @@ function setMarkers(_data) {
       app.map.setZoom(14);
       app.map.setCenter(new google.maps.LatLng(item.geo.coordinates[0], item.geo.coordinates[1]));
 
-
-      // Add circle overlay and bind to marker
-      //Can be used for future
-      //   var circle = new google.maps.Circle({
-      //     map: app.map,
-      //   radius: 16093,    // 10 miles in metres
-      //   fillColor: '#AA0000'
-      // });
-      //   circle.bindTo('center', app.markers[key], 'position');
-
-
     }
   });
 }

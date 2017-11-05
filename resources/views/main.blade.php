@@ -16,7 +16,7 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6T6BYnfeGxcz0yiN4lM8WNMwOil7u64s&libraries=places" async
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD6T6BYnfeGxcz0yiN4lM8WNMwOil7u64s&libraries=places" async
   defer></script>
   <script type="text/javascript" src="/js/main.js"></script>
 </head>
@@ -28,7 +28,7 @@
           <span class="navbar-brand">
             <a href="{{ url('/') }}">
               <img style="max-width:100px; margin-top: -7px;"
-              src="{{url('RabbitInternet.png')}}">
+              src="RabbitInternet.png">
             </a>
           </span>
         </div>
