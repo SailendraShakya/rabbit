@@ -41,7 +41,7 @@ class MapController extends Controller {
 		$lng = $request->input('lng');
 		$lat = $request->input('lat');
 		$record = History::where('city', $city)->where('updated_at', '>', $hour)->first();
-		
+		die('testing');
 		if ($record) {
 			$twitter_data = $record->data;
 		} else {
