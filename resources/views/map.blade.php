@@ -10,13 +10,18 @@
 		{{ Form::submit('Submit Form', ['class' => 'btn btn-primary btn-sm','id' => 'search']) }}
 	</div>
 </div>
-<div class="history-wrapper"><a href="" class="btn-sm">History</a></div>
+<div class="history-wrapper"><a href="" id="search_history" class="btn-sm">History</a></div>
 
 
 <div class="clearfix"></div>
-<div class="">
-	<h1>Map Here</h1>
-	<div id="map-canvas" style="height:50em">
+<div id="mapper_wrapper">
+	<h3>Map Here</h3>
+	<div id="map-canvas" style="height:40em">
+	</div>
+</div>
+<div id="history_wrapper" style="display: none;">
+	<h3>History</h3>
+	<div id="history" style="height:40em">
 	</div>
 </div>
 {!! Form::close() !!}

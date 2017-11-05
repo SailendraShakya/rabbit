@@ -12,6 +12,5 @@
 */
 
 Route::get('/', 'MapController@getIndex');
-// Route::post($uri, $callback);
-Route::post('map/tweet', 'MapController@tweet');
+Route::get('map/tweets_history', 'MapController@tweets_history');
 Route::post('map/tweets', 'MapController@tweets');

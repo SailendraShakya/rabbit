@@ -13,13 +13,14 @@ class CreateHistoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('history', function (Blueprint $table) {
+        Schema::create('histories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('keyword');
             $table->string('longitude');
             $table->string('latitude');
             $table->string('image_url');
             $table->text('description');
+            $table->integer('count');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateHistoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('history');
+        Schema::dropIfExists('histories');
     }
 }
