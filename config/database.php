@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ return [
 
     'sqlite' => [
     'driver' => 'sqlite',
-    'database' => database_path('database.sqlite'),
+    'database' => env('DB_DATABASE', database_path('database.sqlite')),
     'prefix' => '',
     ],
 
@@ -56,10 +56,10 @@ return [
 
     'pgsql' => [
     'driver' => 'pgsql',
-    'host' => env('DB_HOST', '127.0.0.1'),
+    'host' => env('DB_HOST', 'postgres://lmobiffcnzercr:d5d1696f5058003f21d38d12d2f4107d4d4a16f259636c3948821fe84f317e2d@ec2-54-225-71-119.compute-1.amazonaws.com:5432/d8b29u2d2n3g8r'),
     'port' => env('DB_PORT', '5432'),
-    'database' => env('DB_DATABASE', 'forge'),
-    'username' => env('DB_USERNAME', 'forge'),
+    'database' => env('DB_DATABASE', 'db_map'),
+    'username' => env('DB_USERNAME', 'root'),
     'password' => env('DB_PASSWORD', ''),
     'charset' => 'utf8',
     'prefix' => '',
